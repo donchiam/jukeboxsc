@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML5 Audio</title>
+	<link rel="stylesheet" type="text/css" href="jukebox.css">
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<script src="https://use.fontawesome.com/c3b337aa9c.js"></script>
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.2.1.js"></script>
+</head>
+
+<body>
+	
+	<div id="jukebox">
+		
+		<form id="songList" method="post">
+   			<label>
+		      	<select id="jukeSong">
+		      		<!--onchange="selectSong()">-->
+		      		<option selected="selected">Select a song</option>
+		      	</select>
+   			</label>
+		</form>	
+
+<!--		<form>
+			<label for="search"></label>
+			<input name="term" type="text" id="search"/>
+			<input type="submit" value="Search" />
+		</form>
+-->
+		<audio id="music" ></audio>
+		<!--<src = "music/" audio id="music" preload="true">
+			<source src="music/" type="audio/mp3">
+		</audio>
+	-->
+	
+		<div id="interface">
+			
+			<div id="songTitle">----------------------
+			</div>
+
+			<div id ="art">
+				<div id="info">
+					<p id="artistName">
+					</p>
+					<p id="profile">
+					</p>
+					<p id="trackPage">
+					</p>
+					<p id="description">
+					</p>
+					<p id="genre">
+					</p>
+					<p id="release">
+					</p>
+				</div>
+			</div>
+			
+			<div id="status">
+				<input id="seekSlider" type="range" min="0" max="100" value = "0" step = "1"></input>
+			</div>
+
+			<div id="controls">
+				<!--<div id="backward">-->
+					<i class="fa fa-step-backward"></i>	
+				<!--</div>-->
+				<!--<div id="playPause">-->
+					<i class="fa fa-play"></i>
+					<i class="fa fa-pause"></i>
+				<!--</div>-->
+				<!--<div id="forward">-->
+					<i class="fa fa-step-forward"></i>
+				<!--</div>-->
+			</div>
+
+			<div id="volume">
+				<i class="fa fa-volume-down"></i>
+				<!--<label id="rngVolume_label" for="rngVolume"></label>-->
+				<input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5"></input>
+				<i class="fa fa-volume-up"></i>
+  			</div> <!--onchange="setVolume(this.value)-->
+  			<br>
+			
+
+
+		</div>
+
+	</div>
+
+	<script src="jukebox_soundcloud.js" type="text/javascript"></script>
+
+</body>
+
+</html>

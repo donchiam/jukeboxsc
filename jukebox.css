@@ -1,0 +1,125 @@
+body {
+	background-image: url("nightsky.jpg");
+}
+
+#jukebox {
+	width: 360px;
+	height: 600px;
+	font-size: 36px;
+	border: 2px solid double #F0F8FF;
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 25px;
+
+}
+
+
+select {
+	width: 180px;
+	height: 30px;
+	text-align-last:center;
+	margin: 0 auto;
+	background-color: black;
+	font-family: Orbitron;
+	color: #44F8E9;
+	font-size: 12px;
+}
+
+
+
+#songList {
+	margin-bottom: 4%;
+}
+
+#songTitle {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Orbitron;
+	color: #44F8E9;
+	background-color: black;
+	height: auto;
+	padding-top: 5%;
+	padding-bottom: 1%;
+	min-height: 40px;
+	max-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+
+
+#art {
+	background-size: 100%;
+	background-color: black;
+	height: 350px;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+
+
+}
+#info {
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	font-size: 12px;
+	font-family: Orbitron;
+	color: #44F8E9;
+	width: 90%;
+	margin: 10px auto;
+	padding-left: 10px;
+	overflow: auto;
+	word-wrap: break-word;
+	background-color: rgba(0, 0, 0, 0);
+    color: transparent;
+    transition: 0s;
+    border-radius: 25px;
+}
+
+#art > div:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: left;
+    font-size: 12px;
+    font-family: Orbitron;
+    color: #44F8E9;
+   	font-weight: bold;
+}
+
+
+#controls {
+	vertical-align: middle;
+}
+
+#controls i {
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	margin: 0 auto;
+	text-align: center;
+
+	
+	
+}
+
+#controls i:hover {
+    color: #F0F8FF;
+    font-weight: bold;
+}
+
+#volume {	
+	font-size: 18px;
+	padding-left: 27%;
+	float: left;
+}
+
+#volume label, input {
+	vertical-align: middle;
+	cursor: pointer;
+
+}
+
+
